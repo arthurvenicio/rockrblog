@@ -37,7 +37,7 @@ export const Container = styled.div`
 
 export const Box = styled.div`
   width: 50rem;
-  height: 45rem;
+  height: 60rem;
   background: #fff;
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
@@ -48,4 +48,61 @@ export const Box = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+`;
+
+export const SubBox = styled.div`
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid black; */
+`;
+
+export const Article = styled.div`
+  width: 38.75rem;
+  height: 32.5rem;
+
+  margin-top: 4rem;
+
+  p {
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    font-size: 0.984rem;
+  }
+`;
+
+export const Image = styled.img`
+  height: 100%;
+`;
+
+export const Info = styled.div`
+  width: 20rem;
+  height: 14.75rem;
+  margin-left: 5rem;
+  /* border: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  p {
+    font-family: Rubik, sans-serif;
+
+    &.date {
+      font-size: 0.854rem;
+      font-weight: 400;
+    }
+
+    &.author {
+      font-size: 1.354rem;
+      font-weight: 400;
+    }
+
+    &.title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #f1a10a;
+    }
+  }
 `;

@@ -24,7 +24,7 @@ export const Modal = styled.div`
 `;
 
 export const Title = styled.p`
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-family: Rubik, sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -91,8 +91,29 @@ export const Button = styled.button`
   background: #2d2d2d;
   border-radius: 0.25rem;
 
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
   color: #fff;
   font-family: Rubik, sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const ButtonExit = styled.button`
+  margin-top: 1rem;
+  margin-right: 1.758rem;
+  margin-left: auto;
+  background: transparent;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;

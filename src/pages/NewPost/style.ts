@@ -132,8 +132,17 @@ export const Button = styled.button`
   background: #2d2d2d;
   border-radius: 0.25rem;
 
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+
   color: #fff;
   font-family: Rubik, sans-serif;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;

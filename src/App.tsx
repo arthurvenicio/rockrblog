@@ -1,12 +1,15 @@
 import React from "react";
 import { Router } from "./routes";
 import GlobalStyles from "./styles/global";
+import { ModalProvider } from "./contexts/ModalContext";
 
 function App(): JSX.Element {
   return (
     <>
-      <Router />
-      <GlobalStyles />
+      <ModalProvider>
+        <Router />
+        <GlobalStyles />
+      </ModalProvider>
     </>
   );
 }

@@ -18,6 +18,21 @@ export const Header = styled.header`
     text-decoration: none;
   }
 
+  & button {
+    border: none;
+    background: transparent;
+
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
   & a {
     color: #fff;
     font-family: Rubik, sans-serif;

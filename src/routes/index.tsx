@@ -10,7 +10,7 @@ export const Router = (): JSX.Element => {
       <Switch>
         <Route component={Home} exact path="/" />
         <Route component={NewPost} exact path="/newpost" />
-        <Route component={Post} exact path="/post" />
+        <Route component={Post} exact path="/post/:id" />
       </Switch>
     </BrowserRouter>
   );

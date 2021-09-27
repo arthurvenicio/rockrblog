@@ -60,11 +60,16 @@ export const Header = styled.header`
       &.newpost {
         border: 1px solid #f1a10a;
         padding: 0.54rem;
-        border-radius: 1rem;
+        border-radius: 0.743rem;
         color: #f1a10a;
         font-family: Rubik, sans-serif;
         font-weight: 700;
         text-decoration: none;
+
+        &:hover {
+          color: #2d2d2d;
+          background: #f1a10a;
+        }
       }
     }
   }

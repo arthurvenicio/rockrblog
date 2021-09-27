@@ -1,4 +1,4 @@
-export type Post = {
+export type PostT = {
   id: string;
   author: string;
   authorEmail: string;
@@ -14,4 +14,8 @@ export type Card = {
   article: string;
   imageUrl: string;
   key: number;
+};
+
+export type Query = {
+  id: string;
 };

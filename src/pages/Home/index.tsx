@@ -3,11 +3,11 @@ import { ContactModal } from "../../components/ContactModal";
 import { Header } from "../../components/Header";
 import { PostCard } from "../../components/PostCard";
 import api from "../../services/api";
-import { Post } from "../../types/PostTypes";
+import { PostT } from "../../types/PostTypes";
 import * as S from "./style";
 
 export const Home = (): JSX.Element => {
-  const [data, setData] = useState<Post[]>();
+  const [data, setData] = useState<PostT[]>();
 
   useEffect(() => {
     api

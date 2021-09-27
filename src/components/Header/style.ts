@@ -16,6 +16,13 @@ export const Header = styled.header`
     font-family: Rubik, sans-serif;
     font-weight: 700;
     text-decoration: none;
+
+    &.title {
+      color: #fff;
+      font-family: Rubik, sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+    }
   }
 
   & button {

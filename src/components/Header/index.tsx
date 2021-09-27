@@ -14,7 +14,7 @@ export const Header = (): JSX.Element => {
       <S.Header>
         <S.Title>
           <Link to="/">
-            <a>Rockr Blog</a>
+            <p className="title">Rockr Blog</p>
           </Link>
         </S.Title>
 

@@ -25,16 +25,20 @@ export const Data = styled.div`
     }
 
     &.title {
+      max-height: 1rem;
+      max-width: 30rem;
       font-family: Rubik, sans-serif;
       font-weight: 700;
-      font-size: 1.6rem;
+      font-size: 0.9rem;
       color: #f1a10a;
     }
 
     &.article {
+      max-height: 2rem;
+      max-width: 30rem;
       font-family: Rubik, sans-serif;
       font-weight: 400;
-      font-size: 1rem;
+      font-size: 0.95rem;
       color: #2d2d2d;
     }
   }

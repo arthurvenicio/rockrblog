@@ -7,10 +7,11 @@ export const PostCard = ({
   article,
   author,
   imageUrl,
+  key,
 }: Card): JSX.Element => {
   return (
     <>
-      <S.Card>
+      <S.Card key={key}>
         <S.Image src={imageUrl} />
         <S.Data>
           <p className="author">{author}</p>

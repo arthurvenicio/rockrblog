@@ -56,6 +56,16 @@ export const Header = styled.header`
     p {
       color: #fff;
       font-weight: 600;
+
+      &.newpost {
+        border: 1px solid #f1a10a;
+        padding: 0.54rem;
+        border-radius: 1rem;
+        color: #f1a10a;
+        font-family: Rubik, sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+      }
     }
   }
 `;

@@ -22,6 +22,22 @@ export const Home = (): JSX.Element => {
 
   console.log(data);
 
+  if (!data) {
+    return (
+      <>
+        <ContactModal />
+        <S.Wraper>
+          <Header />
+          <S.Container>
+            <S.Cards>
+              <p>Erro com o Servidor</p>
+            </S.Cards>
+          </S.Container>
+        </S.Wraper>
+      </>
+    );
+  }
+
   return (
     <>
       <ContactModal />
@@ -29,12 +45,15 @@ export const Home = (): JSX.Element => {
         <Header />
         <S.Container>
           <S.Cards>
-            <PostCard
-              title="Teste"
-              article="auhsadhdashdhuashudusadhua"
-              author="Arthur Venicio"
-              imageUrl="https://source.unsplash.com/640x640/?trees"
-            />
+            {data.map((item, index) => (
+              <PostCard
+                key={index}
+                title={item.title}
+                article={item.article}
+                author={item.author}
+                imageUrl={item.imageUrl}
+              />
+            ))}
           </S.Cards>
         </S.Container>
       </S.Wraper>

@@ -19,8 +19,13 @@ export const Header = (): JSX.Element => {
         </S.Title>
 
         <S.Header id="menu">
-          <p>Posts</p>
+          <Link to="/">
+            <p>Posts</p>
+          </Link>
           <button onClick={() => onClickContact()}>Contact</button>
+          <Link to="/newpost">
+            <p className="newpost">NewPost</p>
+          </Link>
         </S.Header>
       </S.Header>
     </>

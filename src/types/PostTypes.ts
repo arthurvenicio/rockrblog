@@ -13,4 +13,5 @@ export type Card = {
   title: string;
   article: string;
   imageUrl: string;
+  key: number;
 };

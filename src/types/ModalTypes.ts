@@ -6,5 +6,6 @@ export type ModalProviderProps = {
 
 export type ModalContextT = {
   isOpen: boolean;
+  setClose: () => void;
   toogleOpenModal: () => void;
 };

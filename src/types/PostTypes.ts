@@ -13,7 +13,7 @@ export type Card = {
   title: string;
   article: string;
   imageUrl: string;
-  key: number;
+  id: string;
 };
 
 export type Query = {

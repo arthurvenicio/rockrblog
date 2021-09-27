@@ -121,7 +121,7 @@ export const textArea = styled.textarea`
   max-width: 22.54rem;
   padding: 0.65rem;
   width: 22.54rem;
-  height: 6rem;
+  height: 10rem;
   border: 1px solid black;
   border-radius: 0.25rem;
 `;

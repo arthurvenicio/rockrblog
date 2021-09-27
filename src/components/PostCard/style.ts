@@ -31,6 +31,7 @@ export const Data = styled.div`
       font-weight: 700;
       font-size: 0.9rem;
       color: #f1a10a;
+      text-decoration: none;
     }
 
     &.article {
@@ -41,5 +42,9 @@ export const Data = styled.div`
       font-size: 0.95rem;
       color: #2d2d2d;
     }
+  }
+
+  .link {
+    text-decoration: none;
   }
 `;

@@ -11,8 +11,12 @@ export const ModalProvider = ({
     setIsOpen(!isOpen);
   }
 
+  function setClose() {
+    setIsOpen(false);
+  }
+
   return (
-    <ModalContext.Provider value={{ isOpen, toogleOpenModal }}>
+    <ModalContext.Provider value={{ isOpen, toogleOpenModal, setClose }}>
       {children}
     </ModalContext.Provider>
   );

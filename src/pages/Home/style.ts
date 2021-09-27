@@ -7,6 +7,10 @@ export const Wraper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .error {
+    height: 100vh;
+  }
 `;
 
 export const Container = styled.div`
@@ -41,6 +45,8 @@ export const Cards = styled.div`
   height: auto;
 
   margin-top: 1.5rem;
+
+  padding-bottom: 2rem;
 
   display: flex;
   flex-direction: column;

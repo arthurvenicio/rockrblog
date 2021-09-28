@@ -1,75 +1,73 @@
 import styled from "styled-components";
 
-export const Wraper = styled.div`
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
 export const Container = styled.div`
-  width: 100%;
-  height: 100%;
+  margin-top: 2rem;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(0.8px);
+  background-color: rgba(0, 0, 0, 0.6);
 
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgb(241, 161, 10);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(241, 161, 10, 1) 0%,
-    rgba(52, 35, 3, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(241, 161, 10, 1) 0%,
-    rgba(52, 35, 3, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(241, 161, 10, 1) 0%,
-    rgba(52, 35, 3, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f1a10a",endColorstr="#342303",GradientType=1);
+
+  @media (max-width: 360px) {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media (max-width: 411px) {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 
-export const Box = styled.div`
-  width: 50rem;
-  height: 45rem;
+export const Modal = styled.div`
+  width: 30rem;
+  height: 35rem;
   background: #fff;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
 
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+
+  @media (max-width: 360px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 411px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
-export const titleBox = styled.div`
-  width: auto;
-  height: auto;
-  background: transparent;
+export const Title = styled.p`
   margin-top: 1rem;
-
-  color: #f1a10a;
   font-family: Rubik, sans-serif;
   font-weight: 700;
-`;
-
-export const Image = styled.img`
-  margin-top: 2rem;
-  width: 10rem;
-  border-radius: 50%;
-  transition: transform 1s;
-  &:hover {
-    filter: brightness(1.5);
-    transform: scale(1.105);
-  }
+  font-size: 36px;
+  color: #f1a10a;
 `;
 
 export const Form = styled.form`
@@ -121,7 +119,7 @@ export const textArea = styled.textarea`
   max-width: 22.54rem;
   padding: 0.65rem;
   width: 22.54rem;
-  height: 10rem;
+  height: 6rem;
   border: 1px solid black;
   border-radius: 0.25rem;
 `;
@@ -141,6 +139,22 @@ export const Button = styled.button`
   font-family: Rubik, sans-serif;
   font-weight: 500;
   font-size: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+`;
+
+export const ButtonExit = styled.button`
+  margin-top: 1rem;
+  margin-right: 1.758rem;
+  margin-left: auto;
+  background: transparent;
+  border: none;
 
   &:hover {
     cursor: pointer;

@@ -16,6 +16,28 @@ export const Header = styled.header`
     font-family: Rubik, sans-serif;
     font-weight: 700;
     text-decoration: none;
+
+    &.title {
+      color: #fff;
+      font-family: Rubik, sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  & button {
+    border: none;
+    background: transparent;
+
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   & a {
@@ -34,6 +56,21 @@ export const Header = styled.header`
     p {
       color: #fff;
       font-weight: 600;
+
+      &.newpost {
+        border: 1px solid #f1a10a;
+        padding: 0.54rem;
+        border-radius: 0.743rem;
+        color: #f1a10a;
+        font-family: Rubik, sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+
+        &:hover {
+          color: #2d2d2d;
+          background: #f1a10a;
+        }
+      }
     }
   }
 `;

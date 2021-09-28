@@ -1,4 +1,4 @@
-export function FormatDate(date: string): string {
+export const FormatDate = (date: string): string => {
   const months = [
     "Jan",
     "Fev",
@@ -16,4 +16,4 @@ export function FormatDate(date: string): string {
   const datat = new Date(date);
   const datef = datat.getDate() + ", " + months[datat.getMonth()];
   return datef;
-}
+};

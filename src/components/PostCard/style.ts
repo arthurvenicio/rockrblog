@@ -16,7 +16,12 @@ export const Image = styled.img`
 
 export const Data = styled.div`
   margin-top: 1rem;
+  width: 33rem;
+  height: 8rem;
+  overflow: hidden;
+
   p {
+    width: 33rem;
     &.author {
       font-family: Rubik, sans-serif;
       font-weight: 400;
@@ -26,21 +31,32 @@ export const Data = styled.div`
 
     &.title {
       max-height: 1rem;
-      max-width: 30rem;
+      max-width: 32rem;
       font-family: Rubik, sans-serif;
       font-weight: 700;
       font-size: 0.9rem;
       color: #f1a10a;
       text-decoration: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 1; /* number of lines to show */
+      -webkit-box-orient: vertical;
     }
 
     &.article {
-      max-height: 2rem;
-      max-width: 30rem;
+      max-width: 32rem;
       font-family: Rubik, sans-serif;
       font-weight: 400;
       font-size: 0.95rem;
       color: #2d2d2d;
+
+      /* Criação de ... */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
     }
   }
 

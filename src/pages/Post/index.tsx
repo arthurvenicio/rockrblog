@@ -5,6 +5,7 @@ import { Header } from "../../components/Header";
 import api from "../../services/api";
 import { PostT, Query } from "../../types/PostTypes";
 import { FormatDate } from "../../utils/formatDate";
+import { removeTags } from "../../utils/removeTags";
 import * as S from "./style";
 
 export const Post = (): JSX.Element => {
@@ -41,6 +42,8 @@ export const Post = (): JSX.Element => {
 
   const datef = FormatDate(date);
 
+  const text = removeTags(article);
+
   return (
     <>
       <ContactModal />
@@ -57,7 +60,7 @@ export const Post = (): JSX.Element => {
               </S.Info>
             </S.SubBox>
             <S.Article>
-              <p>{article}</p>
+              <p>{text}</p>
             </S.Article>
           </S.Box>
         </S.Container>

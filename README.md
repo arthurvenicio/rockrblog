@@ -4,6 +4,12 @@
 
 The project is part of a test for recruitment by the company [Coderockr](http://coderockr.com/) in accordance with the vacancy of front-end developer, was developed in ReactJs with Typescript, and using yarn for package management.
 
+## Preview
+
+![Blog Preview - 1](./screenshots/screenshot_1.png)
+![Blog Preview - 2](./screenshots/screenshot_2.png)
+![Blog Preview - 3](./screenshots/screenshot_3.png)
+
 ## To run
 
 1. Above all, please clone this repository on your local machine.

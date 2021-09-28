@@ -2,7 +2,7 @@
 
 ## About the project
 
-`The project is part of a test for recruitment by the company Coderockr in accordance with the vacancy of front-end developer, was developed in ReactJs with Typescript, and using yarn for package management.`
+The project is part of a test for recruitment by the company [Coderockr](http://coderockr.com/) in accordance with the vacancy of front-end developer, was developed in ReactJs with Typescript, and using yarn for package management.
 
 ## To run
 

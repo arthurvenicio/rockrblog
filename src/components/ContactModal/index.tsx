@@ -35,7 +35,7 @@ export const ContactModal = (): JSX.Element => {
                 <p>Post</p>
                 <S.textArea placeholder="Hello..." />
               </S.TextArea>
-              <S.Button>
+              <S.Button disabled>
                 <IoMdSend size="1rem" /> Submit
               </S.Button>
             </S.Form>

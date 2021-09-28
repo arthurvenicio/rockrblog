@@ -104,6 +104,10 @@ export const Button = styled.button`
   &:hover {
     cursor: pointer;
   }
+
+  &:disabled {
+    cursor: not-allowed;
+  }
 `;
 
 export const ButtonExit = styled.button`

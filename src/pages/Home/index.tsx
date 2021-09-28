@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
+import Loader from "react-loader-spinner";
+import api from "../../services/api";
 import { ContactModal } from "../../components/ContactModal";
 import { Header } from "../../components/Header";
 import { PostCard } from "../../components/PostCard";
+
 import { useModal } from "../../hooks/useModal";
-import api from "../../services/api";
+
 import { PostT } from "../../types/PostTypes";
 import * as S from "./style";
 
@@ -33,8 +36,14 @@ export const Home = (): JSX.Element => {
         <S.Wraper>
           <Header />
           <S.Container className="error">
-            <S.Cards>
-              <p>Erro com o Servidor</p>
+            <S.Cards className="loading">
+              <Loader
+                type="Oval"
+                color="#f1a10a"
+                height={50}
+                width={50} //3 secs
+              />
+              <p>Estamos carregando os dados!</p>
             </S.Cards>
           </S.Container>
         </S.Wraper>

@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import Loader from "react-loader-spinner";
+import api from "../../services/api";
+
 import { ContactModal } from "../../components/ContactModal";
 import { Header } from "../../components/Header";
-import api from "../../services/api";
-import { PostT, Query } from "../../types/PostTypes";
+
 import { FormatDate } from "../../utils/formatDate";
 import { removeTags } from "../../utils/removeTags";
+
+import { PostT, Query } from "../../types/PostTypes";
 import * as S from "./style";
 
 export const Post = (): JSX.Element => {
@@ -29,8 +33,14 @@ export const Post = (): JSX.Element => {
         <S.Wraper>
           <Header />
           <S.Container>
-            <S.Box>
-              <p>Error</p>
+            <S.Box className="loading">
+              <Loader
+                type="Oval"
+                color="#f1a10a"
+                height={200}
+                width={200}
+                timeout={60000} //3 secs
+              />
             </S.Box>
           </S.Container>
         </S.Wraper>

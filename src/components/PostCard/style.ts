@@ -20,6 +20,10 @@ export const Data = styled.div`
   height: 8rem;
   overflow: hidden;
 
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+
   p {
     width: 33rem;
     &.author {

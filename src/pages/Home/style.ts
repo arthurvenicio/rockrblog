@@ -52,4 +52,17 @@ export const Cards = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
+
+  &.loading {
+    padding: 2rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-family: Rubik, sans-serif;
+      font-weight: 600;
+    }
+  }
 `;

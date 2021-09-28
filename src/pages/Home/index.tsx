@@ -27,8 +27,6 @@ export const Home = (): JSX.Element => {
     setClose();
   }, []);
 
-  console.log(data);
-
   if (!data) {
     return (
       <>

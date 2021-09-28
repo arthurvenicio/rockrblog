@@ -11,6 +11,26 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 360px) {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media (max-width: 411px) {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
 `;
 
 export const Modal = styled.div`
@@ -22,6 +42,24 @@ export const Modal = styled.div`
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+
+  @media (max-width: 360px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 411px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export const Title = styled.p`
